@@ -1,10 +1,17 @@
-import React, {useEffect, useState} from 'react';
-import ColorCard from './ColorCard';
+import React from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import Home from './Home';
 
 const App = () => {
 
   return (
-    <h1>Hello world!</h1>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact={true}>
+          <Home/>
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 
 };
