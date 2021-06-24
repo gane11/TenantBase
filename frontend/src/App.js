@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import ColorCard from './ColorCard';
 
-function App() {
+const App = () => {
+
   return (
     <h1>Hello world!</h1>
   );
-}
+
+};
 
 export default App;
