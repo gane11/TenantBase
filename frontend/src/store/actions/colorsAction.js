@@ -6,7 +6,7 @@ export const getAllColors = () => async (dispatch) => {
     try {
         const res = await fetch(
           "http://www.colourlovers.com/api/palettes/new?format=json"
-        );
+        ,{mode: 'no-cors'});
         if(res.ok) {
             const colors = await res.json();
             if(colors) {
