@@ -8,7 +8,7 @@ const ColorCard = ({color}) => {
         <div className="color-container">
             <div className="left-side">
                 <div className="color-name">
-
+                    {color.id}
                 </div>
                 <div className="color-createdby">
 

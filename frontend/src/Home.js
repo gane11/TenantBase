@@ -5,16 +5,22 @@ import {useDispatch, useSelector} from 'react-redux';
 
 const Home = ({colors, getAllColors}) => {
 
-    const [lastUpdate, setLastUpdate] = useState(new Date().getTime());
+    let hoursMinutes = `${new Date().getHours()}:${new Date().getMinutes()}  `  
+
+    const [lastUpdate, setLastUpdate] = useState(hoursMinutes);
 
     useEffect(() => {
         getAllColors()
     }, [])
 
+    if(colors) {
+        console.log(colors)
+    }
+
     return (
         <div>
             <div className="updated-time">
-                {lastUpdate}
+                Last Updated at {lastUpdate} 
             </div>
             <div className="title">
                 ColourLovers. <span className="title-right">Live.</span>
