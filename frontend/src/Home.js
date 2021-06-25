@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import ColorCard from './ColorCard';
 import {getAllColors} from './store/actions/colorsAction';
+import {useDispatch, useSelector} from 'react-redux';
 
-const Home = (colors, getAllColors) => {
+const Home = ({colors, getAllColors}) => {
 
     const [lastUpdate, setLastUpdate] = useState(new Date().getTime());
 
@@ -29,6 +30,17 @@ const Home = (colors, getAllColors) => {
     );
 };
 
+const HomeContainer= () => {
+    const colors = useSelector((state) => Object.values(state.colors));
+    const dispatch = useDispatch();
+    return(
+        <Home 
+            colors={colors}
+            getAllColors={() => dispatch(getAllColors())}
+        />
+    )
+}
 
 
-export default Home;
+
+export default HomeContainer;

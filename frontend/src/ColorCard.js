@@ -1,14 +1,14 @@
 import React from 'react';
 
 
-const ColorCard = (color) => {
+const ColorCard = ({color}) => {
     
     
     return (
         <div className="color-container">
             <div className="left-side">
                 <div className="color-name">
-                    
+
                 </div>
                 <div className="color-createdby">
 
