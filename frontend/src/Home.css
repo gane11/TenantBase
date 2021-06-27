@@ -1,0 +1,25 @@
+.home {
+    margin-left: 3rem;
+}
+
+.updated-time {
+    color: white;
+    font-weight: bolder;
+    float: right;
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+
+.title {
+    color: white;
+    font-weight: lighter;
+    font-size: 6rem;
+    padding-top: 8rem;
+}
+.title-right{
+    font-weight: bolder;
+}
+
+.colors-container {
+    
+}
