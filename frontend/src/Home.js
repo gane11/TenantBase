@@ -377,7 +377,7 @@ let tempColors = [
   },
 ];
 
-const Home = () => {
+const Home = ({colors, getAllColors}) => {
 
     let hoursMinutes = `${new Date().getHours()}:${new Date().getMinutes()}  `  
 
@@ -386,7 +386,6 @@ const Home = () => {
     useEffect(() => {
         getAllColors()
     }, [])
-
 
 
     return (
@@ -398,7 +397,7 @@ const Home = () => {
                 ColourLovers. <span className="title-right">Live.</span>
             </div>
             <div className="colors-container">
-                {tempColors.map(color => {
+                {colors.map(color => {
                     return(
                         <ColorCard color={color}/>
                     )
@@ -408,17 +407,17 @@ const Home = () => {
     );
 };
 
-// const HomeContainer= () => {
-//     const colors = useSelector((state) => Object.values(state.colors));
-//     const dispatch = useDispatch();
-//     return(
-//         <Home 
-//             colors={colors}
-//             getAllColors={() => dispatch(getAllColors())}
-//         />
-//     )
-// }
+const HomeContainer= () => {
+    const colors = useSelector((state) => Object.values(state.colors));
+    const dispatch = useDispatch();
+    return(
+        <Home 
+            colors={colors}
+            getAllColors={() => dispatch(getAllColors())}
+        />
+    )
+}
 
 
 
-export default Home;
+export default HomeContainer;
