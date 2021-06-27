@@ -1,8 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import ColorCard from './ColorCard';
-import {getAllColors} from './store/actions/colorsAction';
-import {useDispatch, useSelector} from 'react-redux';
-import './Home.css'
+import './style/Home.css';
 
 const Home = ({colors, getAllColors}) => {
 
@@ -28,7 +26,7 @@ const Home = ({colors, getAllColors}) => {
             <div className="colors-container">
                 {colors.map(color => {
                     return(
-                        <ColorCard color={color}/>
+                        <ColorCard key={color.id} color={color}/>
                     )
                 })}
             </div>
@@ -36,17 +34,6 @@ const Home = ({colors, getAllColors}) => {
     );
 };
 
-const HomeContainer= () => {
-    const colors = useSelector((state) => Object.values(state.colors));
-    const dispatch = useDispatch();
-    return(
-        <Home 
-            colors={colors}
-            getAllColors={() => dispatch(getAllColors())}
-        />
-    )
-}
 
 
-
-export default HomeContainer;
+export default Home;

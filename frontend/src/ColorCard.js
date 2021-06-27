@@ -1,5 +1,5 @@
 import React from 'react';
-import "./ColorCard.css";
+import "./style/ColorCard.css";
 
 const ColorCard = ({color}) => {
     let color1 = {
