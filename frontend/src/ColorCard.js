@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./ColorCard.css";
 
 const ColorCard = ({color}) => {
     
@@ -8,17 +8,17 @@ const ColorCard = ({color}) => {
         <div className="color-container">
             <div className="left-side">
                 <div className="color-name">
-                    {color.id}
+                    {color.title}
                 </div>
                 <div className="color-createdby">
-
+                    {color.userName}
                 </div>
                 <div className="color-rating">
                     <div className="color-views">
-
+                        {color.numViews}
                     </div>
                     <div className="color-vote">
-
+                        {color.numVotes}
                     </div>
                 </div>
             </div>
