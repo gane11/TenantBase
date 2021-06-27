@@ -8,12 +8,10 @@ export const getAllColors = () => async (dispatch) => {
 
         
          const res = await fetch("http://localhost:3030");
-
-            console.log('HEYYY', res);
          if (res.ok) {
            const colors= await res.json();
-           console.log(colors)
            if (colors) {
+             console.log(colors)
              dispatch(load(colors));
            }
          }
