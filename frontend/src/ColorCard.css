@@ -1,0 +1,41 @@
+.color-container {
+    display: flex;
+    height: 20rem;
+    width: 40rem;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+}
+
+.color-name {
+    font-size: 2rem;
+}
+
+.color-createdby {
+    font-weight: lighter;
+}
+
+.color-rating{
+    display: flex;
+    background-color: rgb(0, 108, 162);
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.right-side {
+    width: 25rem;
+    display: flex;
+    margin-left: 2rem;
+}
+
+.color-color {
+    width: 5rem;
+    height: 100%;
+}

@@ -1,5 +1,5 @@
 .home {
-    margin-left: 3rem;
+    margin-left: 4rem;
 }
 
 .updated-time {
@@ -13,7 +13,7 @@
 .title {
     color: white;
     font-weight: lighter;
-    font-size: 6rem;
+    font-size: 10rem;
     padding-top: 8rem;
 }
 .title-right{
@@ -23,4 +23,6 @@
 .colors-container {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 4rem;
+    margin-left: 3rem;
 }
