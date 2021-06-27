@@ -39,3 +39,31 @@
     width: 5rem;
     height: 100%;
 }
+
+@media (max-width: 600px) {
+ 
+  .color-container {
+      margin-top: 2rem;
+      width: 30rem;
+      height: 10rem;
+  }
+
+  .left-side {
+      width: 10rem;
+      height: 6rem;
+  }
+
+  .right-side {
+      width: 8rem;
+      height: 6rem;
+  }
+
+  .color-rating {
+      width: 8rem;
+      height: 2rem;
+      padding: 0rem;
+      margin-top: 0.5rem;
+      margin-left: -0.5rem;
+  }
+
+}
