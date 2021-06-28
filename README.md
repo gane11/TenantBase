@@ -59,3 +59,31 @@ It will return a list of palettes. Here's an example palette:
 Further info can be found in the "Palettes" section of the [CL API documentation](http://www.colourlovers.com/api).
 
 Use whatever library of your choice to hit the endpoint. jQuery even.
+
+
+##COMPLETED PROJECT NOTES
+
+##Instructions 
+
+1. Clone the repository.
+2. Open new terminal and Navigate to the backend folder (`cd backend`)
+3. run `npm install`
+4. run `node index.js` (to start the backend server)
+5. Open new terminal and Navigate to frontend folder (`cd frontend`)
+6. run `npm install`
+7. run `npm start` (to start the frontend server)
+8.  Access http://localhost:3000/.
+
+
+##Debuging 
+
+* If port 3032 already runing change the port number at line 33 in index.js
+* Then change http://localhost:3032 on line 10 in colorsAction.js to the port number you chose.
+
+
+##Notes 
+
+* Website has responsive designe for mobile , mcbook pro and bigger screens. (By implementing the media queries in the css files)
+* Utilized Redux for the state management. 
+* Created the Express.js backend server as a proxy. It was the way around the error `No 'Access-Control-Allow-Origin' header is present on the requested resource.` I was receiving when trying to fetch data from the colourlovers api. 
+* Created the interval function in the useEffect hook which utilizes setInterval function. setInterval function rerenders the page and calls getAllColors function every minute.
