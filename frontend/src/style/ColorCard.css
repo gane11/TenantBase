@@ -1,7 +1,7 @@
 .color-container {
     display: flex;
     height: 20rem;
-    width: 52rem;
+    width: 40rem;
     color: white;
     margin-top: 2rem;
     margin-left: 4rem;
@@ -10,7 +10,7 @@
 .left-side {
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    width: 25rem;
 }
 
 .color-name {
@@ -28,11 +28,11 @@
     padding: 1rem;
     margin-top: 2rem;
     width: 10rem;
-    margin-left: -1rem;
 }
 
 .right-side {
-    width: 25rem;
+    width: 15rem;
+    height: 15rem;
     display: flex;
     margin-left: 2rem;
 }
