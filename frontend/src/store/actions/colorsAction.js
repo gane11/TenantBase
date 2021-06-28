@@ -11,13 +11,11 @@ export const getAllColors = () => async (dispatch) => {
          if (res.ok) {
            const colors= await res.json();
            if (colors) {
-             console.log(colors)
              let eightColors = colors.slice(0,8)
              dispatch(load(eightColors));
            }
          }
     } catch(e) {
-        console.log('ALEX')
         console.log(e);
     };
 };

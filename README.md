@@ -83,7 +83,7 @@ Use whatever library of your choice to hit the endpoint. jQuery even.
 
 ### Notes 
 
-* Website has responsive designe for mobile , mcbook pro and bigger screens. (By implementing the media queries in the css files)
+* Website has responsive design for mobile , macbook pro and bigger screens. (By implementing the media queries in the css files)
 * Utilized Redux for the state management. 
 * Created the Express.js backend server as a proxy. It was the way around the error `No 'Access-Control-Allow-Origin' header is present on the requested resource.` I was receiving when trying to fetch data from the colourlovers api. 
 * Created the interval function in the useEffect hook which utilizes setInterval function. setInterval function rerenders the page and calls getAllColors function every minute.
