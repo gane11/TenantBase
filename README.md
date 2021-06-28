@@ -61,9 +61,9 @@ Further info can be found in the "Palettes" section of the [CL API documentation
 Use whatever library of your choice to hit the endpoint. jQuery even.
 
 
-##COMPLETED PROJECT NOTES
+### COMPLETED PROJECT NOTES
 
-##Instructions 
+### Instructions 
 
 1. Clone the repository.
 2. Open new terminal and Navigate to the backend folder (`cd backend`)
@@ -75,13 +75,13 @@ Use whatever library of your choice to hit the endpoint. jQuery even.
 8.  Access http://localhost:3000/.
 
 
-##Debuging 
+### Debuging 
 
 * If port 3032 already runing change the port number at line 33 in index.js
 * Then change http://localhost:3032 on line 10 in colorsAction.js to the port number you chose.
 
 
-##Notes 
+### Notes 
 
 * Website has responsive designe for mobile , mcbook pro and bigger screens. (By implementing the media queries in the css files)
 * Utilized Redux for the state management. 
