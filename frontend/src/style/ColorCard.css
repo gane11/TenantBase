@@ -1,6 +1,6 @@
 .color-container {
     display: flex;
-    height: 20rem;
+    height: 15rem;
     width: 40rem;
     color: white;
     margin-top: 2rem;
@@ -32,7 +32,7 @@
 
 .right-side {
     width: 15rem;
-    height: 15rem;
+    height: 12rem;
     display: flex;
     margin-left: 2rem;
 }
@@ -71,4 +71,16 @@
       margin-left: -0.5rem;
   }
 
+}
+
+@media only screen and (min-width: 1536px) {
+    .color-container{
+        width: 56rem;
+    }
+
+    .right-side {
+        width: 24rem;
+        height: 15rem;
+    }
+    
 }
